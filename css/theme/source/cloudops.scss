@@ -1,0 +1,256 @@
+/**
+ * White theme for reveal.js. This is a CloudOps specific theme.
+ *
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/montserrat/montserrat.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #4b4f54;
+$headingColor: #4b4f54;
+
+$mainFontSize: 30px;
+$mainFont: 'Open Sans', Helvetica, sans-serif;
+$headingFont: Montserrat, Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingFontWeight: 500;
+$linkColor: #62b5e5;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.5em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+// Overrides -----------------------------------
+
+.reveal {
+	font-weight: 300;
+}
+
+.reveal .slides {
+	text-align:left;
+}
+
+.reveal .slide-background.dark {
+	background:#4B4F54;
+}
+
+.reveal .slide-background {
+	border-left:10px solid #62b5e5;
+}
+.reveal .slide-background .slide-background {
+	border:0;
+}
+
+.reveal .center-text {
+	text-align:center !important;
+}
+
+.reveal h1 {
+	color: #62b5e5;
+}
+
+.reveal h2 {
+	line-height:1em;
+	overflow:visible;
+}
+.reveal h2::before {
+	content: url("img/cloudops_icon_90.png");
+	float:right;
+	margin-top: -.15em;
+	margin-left: .25em;
+}
+
+.reveal h4 {
+	color:#cccccc;
+    padding-top: 4em;
+    padding-bottom: .2em;
+}
+.reveal h4::before {
+	content: url("img/cloudops_logo_200.png");
+	float:right;
+    margin-top: -3em;
+    margin-left: .25em;
+}
+
+.reveal.has-dark-background h4 {
+	color:#62b5e5;
+    padding-top: 4em;
+    padding-bottom: .2em;
+}
+.reveal.has-dark-background h4::before {
+	display:none;
+}
+
+.reveal ul,
+.reveal ul ul,
+.reveal ul ul ul,
+.reveal ul ul ul ul {
+	line-height:1.65em;
+	list-style: none;
+	padding: 0;
+	margin: .35em 0 0 .5em;
+	display:block;
+}
+
+.reveal li {
+	padding-left: 1.25em; 
+	text-indent: -1.25em;
+    line-height: 1.15em;
+    margin-bottom: .25em;
+}
+
+.reveal li::before {
+	content: "\f111";
+	font-family: FontAwesome;
+	color: #62b5e5;
+    padding-right: 1.25em;
+    font-size: 55%;
+    vertical-align: 9%;
+}
+
+.reveal li li::before {
+	content: "\f10c";
+	font-family: FontAwesome;
+	color: #62b5e5;
+    padding-right: 1.25em;
+    font-size: 55%;
+    vertical-align: 9%;
+}
+
+.reveal li li li::before {
+	content: "\f054";
+	font-family: FontAwesome;
+	color: #62b5e5;
+    padding-right: 1.25em;
+    font-size: 55%;
+    vertical-align: 9%;
+}
+
+.reveal li li li li::before {
+	content: "\f138";
+	font-family: FontAwesome;
+	color: #62b5e5;
+    padding-right: 1.25em;
+    font-size: 55%;
+    vertical-align: 9%;
+}
+
+.reveal section img {
+	border:0;
+	box-shadow:none;
+}
+
+.reveal code {
+    font-family: monospace;
+    padding: .05em .3em;
+    border: 1px solid #62b5e5;
+    background: #e7f1f7;
+	-moz-border-radius: .2em;
+    -webkit-border-radius: .2em;
+    -khtml-border-radius: .2em;
+    border-radius: .2em;
+}
+
+.reveal pre code {
+    padding: 10px;
+    border:0;
+    background:none;
+}
+
+.right-5, .right-10, .right-15,
+.right-20, .right-25, .right-30,
+.right-35, .right-40, .right-45,
+.right-50, .right-55, .right-60,
+.right-65, .right-70, .right-75,
+.right-80, .right-85, .right-90,
+.right-95 {
+	float: right;
+	margin-left: .25em;
+}
+
+.right-5 {
+	width: 5%;
+}
+.right-10 {
+	width: 10%;
+}
+.right-15 {
+	width: 15%;
+}
+.right-20 {
+	width: 20%;
+}
+.right-25 {
+	width: 25%;
+}
+.right-30 {
+	width: 30%;
+}
+.right-35 {
+	width: 35%;
+}
+.right-40 {
+	width: 40%;
+}
+.right-45 {
+	width: 45%;
+}
+.right-50 {
+	width: 50%;
+}
+.right-55 {
+	width: 55%;
+}
+.right-60 {
+	width: 60%;
+}
+.right-65 {
+	width: 65%;
+}
+.right-70 {
+	width: 70%;
+}
+.right-75 {
+	width: 75%;
+}
+.right-80 {
+	width: 80%;
+}
+.right-85 {
+	width: 85%;
+}
+.right-90 {
+	width: 90%;
+}
+.right-95 {
+	width: 95%;
+}
+
