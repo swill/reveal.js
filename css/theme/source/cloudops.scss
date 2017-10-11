@@ -173,6 +173,7 @@ section.has-dark-background {
     padding: .05em .3em;
     border: 1px solid #62b5e5;
     background: #e7f1f7;
+    color:$mainColor;
 	-moz-border-radius: .2em;
     -webkit-border-radius: .2em;
     -khtml-border-radius: .2em;
@@ -182,7 +183,14 @@ section.has-dark-background {
 .reveal pre code {
     padding: 10px;
     border:0;
-    background:none;
+    background:white;
+}
+
+.reveal table {
+	width:100%;
+}
+.reveal .slim-table table {
+	width:auto;
 }
 
 .right-5, .right-10, .right-15,
