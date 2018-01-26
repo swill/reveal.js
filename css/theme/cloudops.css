@@ -425,6 +425,18 @@ body {
 .reveal .slim-table table {
   width: auto; }
 
+.reveal .slides section img.fragment.current-visible.current-fragment {
+  display: inline-block; }
+
+.reveal .slides section img.fragment.current-visible {
+  display: none; }
+
+.reveal .slides section .fragment.visible.fade {
+  opacity: 0.5; }
+
+.reveal .slides section .fragment.visible.fade.current-fragment {
+  opacity: 1; }
+
 .right-5, .right-10, .right-15,
 .right-20, .right-25, .right-30,
 .right-35, .right-40, .right-45,
