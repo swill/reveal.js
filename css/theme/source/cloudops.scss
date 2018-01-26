@@ -205,10 +205,10 @@ section.has-dark-background {
 	width:auto;
 }
 
-.reveal .slides section img.fragment.current-visible.current-fragment {
+.reveal .slides section .fragment.current-visible.current-fragment {
     display:inline-block;
 }
-.reveal .slides section img.fragment.current-visible {
+.reveal .slides section .fragment.current-visible {
     display:none;
 }
 
