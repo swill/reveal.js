@@ -12,6 +12,7 @@
 
 // Include theme-specific fonts
 @import url(../../lib/font/montserrat/montserrat.css);
+@import url(../../lib/font/open-sans/open-sans.css);
 
 
 // Override theme settings (see ../template/settings.scss)
@@ -171,9 +172,10 @@ section.has-dark-background {
 
 .reveal code {
     font-family: monospace;
-    padding: .05em .3em;
-    border: 1px solid #62b5e5;
-    background: #e7f1f7;
+	padding: 0 .35em;
+	line-height: 135%;
+    border: 1px solid #8dc4e4;
+    background: #f4f7f9;
     color:$mainColor;
 	-moz-border-radius: .2em;
     -webkit-border-radius: .2em;
