@@ -117,49 +117,49 @@ section.has-dark-background {
 	line-height:1.65em;
 	list-style: none;
 	padding: 0;
-	margin: .35em 0 0 .5em;
+	margin: .35em 0 0 .5em !important;
 	display:block;
 }
 
-.reveal li {
+.reveal ul li {
 	padding-left: 1.25em; 
 	text-indent: -1.25em;
     line-height: 1.15em;
     margin-bottom: .25em;
 }
 
-.reveal li::before {
+.reveal ul > li::before {
 	content: "\f111";
 	font-family: FontAwesome;
 	color: #62b5e5;
-    padding-right: 1.25em;
+    padding-right: 1em;
     font-size: 55%;
     vertical-align: 9%;
 }
 
-.reveal li li::before {
+.reveal li ul > li::before {
 	content: "\f10c";
 	font-family: FontAwesome;
 	color: #62b5e5;
-    padding-right: 1.25em;
+    padding-right: 1em;
     font-size: 55%;
     vertical-align: 9%;
 }
 
-.reveal li li li::before {
+.reveal li li ul > li::before {
 	content: "\f054";
 	font-family: FontAwesome;
 	color: #62b5e5;
-    padding-right: 1.25em;
+    padding-right: 1em;
     font-size: 55%;
     vertical-align: 9%;
 }
 
-.reveal li li li li::before {
+.reveal li li li ul > li::before {
 	content: "\f138";
 	font-family: FontAwesome;
 	color: #62b5e5;
-    padding-right: 1.25em;
+    padding-right: 1em;
     font-size: 55%;
     vertical-align: 9%;
 }
@@ -197,7 +197,8 @@ section.has-dark-background {
 .reveal pre code {
     padding: 10px;
     border:0;
-    background:white;
+	background:white;
+	max-height:500px;
 }
 
 .reveal table {
