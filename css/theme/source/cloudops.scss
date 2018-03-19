@@ -101,12 +101,12 @@ section.has-dark-background {
     margin-left: .25em;
 }
 
-.reveal.has-dark-background h4 {
+section.has-dark-background h4 {
 	color:#62b5e5;
     padding-top: 4em;
     padding-bottom: .2em;
 }
-.reveal.has-dark-background h4::before {
+section.has-dark-background h4::before {
 	display:none;
 }
 
@@ -198,14 +198,28 @@ section.has-dark-background {
     padding: 10px;
     border:0;
 	background:white;
-	max-height:550px;
+	max-height:535px;
 }
 
 .reveal table {
 	width:100%;
+	font-size:80%;
 }
 .reveal .slim-table table {
 	width:auto;
+}
+
+.reveal .font-80 {
+	font-size:80%
+}
+.reveal .font-85 {
+	font-size:85%
+}
+.reveal .font-90 {
+	font-size:90%
+}
+.reveal .font-95 {
+	font-size:95%
 }
 
 .reveal .slides section .fragment.current-visible.current-fragment {
