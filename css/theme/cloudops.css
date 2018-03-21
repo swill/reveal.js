@@ -519,3 +519,19 @@ section.has-dark-background h4::before {
 
 .right-95 {
   width: 95%; }
+
+.watermark .reveal .slides .pdf-page section::before {
+  content: "CloudOps - Do not distribute";
+  color: black;
+  font-weight: bold;
+  font-size: 150%;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 500; }
+
+.watermark .reveal .slides .pdf-page section.has-dark-background::before {
+  color: white; }
