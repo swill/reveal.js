@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * White theme for reveal.js. This is a CloudOps specific theme.
  *
@@ -521,7 +522,7 @@ section.has-dark-background h4::before {
   width: 95%; }
 
 .watermark .reveal .slides .pdf-page section::before {
-  content: "CloudOps - Do not distribute";
+  content: "Property of CloudOps – Strictly confidential";
   color: black;
   font-weight: bold;
   font-size: 150%;
@@ -531,7 +532,8 @@ section.has-dark-background h4::before {
   position: absolute;
   top: 40%;
   left: 10%;
-  z-index: 500; }
+  z-index: 500;
+  width: 60%; }
 
 .watermark .reveal .slides .pdf-page section.has-dark-background::before {
   color: white; }

@@ -306,7 +306,7 @@ section.has-dark-background h4::before {
 }
 
 .watermark .reveal .slides .pdf-page section::before {
-    content: "CloudOps - Do not distribute";
+	content: "Property of CloudOps – Strictly confidential";
     color: black;
 	font-weight: bold;
 	font-size:150%;
@@ -317,6 +317,7 @@ section.has-dark-background h4::before {
 	top:40%;
 	left:10%;
 	z-index:500;
+	width: 60%;
 }
 .watermark .reveal .slides .pdf-page section.has-dark-background::before {
 	color: white;
